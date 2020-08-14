@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let baikt = parseInt(prompt("Nhập điểm kiểm tra"));
+        let giuaky = parseInt(prompt("Nhập điểm thi giữa kỳ"));
+        let cuoiky = parseInt(prompt("Nhập điểm thi cuối kỳ"));
+        let diemtrungbinh = (baikt + giuaky + cuoiky )/3;
+        if (diemtrungbinh < 5) {
+            alert("Học lực yếu");
+        }else if (diemtrungbinh >= 5 && diemtrungbinh < 6.5){
+            alert("Học lực trung bình")
+        }else if(diemtrungbinh >= 6.5 && diemtrungbinh <8){
+            alert("Học lực khá")
+        }else {
+            alert("Học lực giỏi")
+        }
+    </script>
+</body>
+</html>
